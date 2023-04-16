@@ -147,8 +147,10 @@ button {
   /* border: 1px solid red; */
 }
 #back{
-    background-color: #4d4d4d;
+    background-color: rgba(62, 62, 62, 0.4);
     margin-right: 50%;
+    color: #18163f;
+    font-weight: 600;
 }
 /* Toggle switch */
 .switch {
@@ -172,7 +174,7 @@ button {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #b7e2ff;
+  background-color: #134f77;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   border-radius: 18px;
@@ -196,7 +198,7 @@ input:checked + .slider {
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196f3;
+  box-shadow: 0 0 1px #223443;
 }
 
 input:checked + .slider:before {
