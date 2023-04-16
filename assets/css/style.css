@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: aliceblue;
+}
+section {
+  background-color: white;
+  padding: 3% 7%;
+  width: 800px;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+}
+.side-bar{
+    background-image: url("/assets/images/bg-sidebar-desktop.svg");
+    background-repeat: no-repeat;
+    height: 400px;
+    background-size: cover;
+    padding: 5% 6%;
+}
+.tabs {
+  display: flex;
+  flex-direction: row;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+.display-info {
+  align-items: center;
+}
+input {
+  width: 50%;
+}
+button {
+  width: 100px;
+}
+.header > p {
+  font-size: smaller;
+  margin-bottom: 8%;
+}
