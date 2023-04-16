@@ -21,6 +21,7 @@ section {
   justify-content: space-between;
   border-radius: 15px;
   position: relative;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.32), 0 4px 8px rgba(0, 0, 0, 0.16);
 }
 .side-bar {
   background-image: url("/assets/images/bg-sidebar-desktop.svg");
@@ -85,7 +86,7 @@ button {
   background-color: #18163f;
   border: 1px solid rgb(69, 69, 101);
   color: white;
-  padding: 2% 3%;
+  padding: 2% 0;
   width: 80px;
   border-radius: 8px;
   font-size: 12px;
@@ -98,44 +99,56 @@ button {
 .option {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
-  padding-top: 8%;
+  margin-top: 8%;
+  background-color: rgba(171, 157, 248, 0.2);
+  padding: 1% 3%;
+  
 }
-.plans{
-    display: flex;
-    flex-direction: row;
-    padding-top: 3%;
-}
-.card{
-    border: 1px solid #483eff;
-    padding: 18px 28px 16px 10px;
-    margin-right: 5%;
-    width: 110px;
-    border-radius: 10px;
-    color: #151169;
-    cursor: pointer;
-    transition: 0.7s;
-}
-.card:hover{
-    background-color: rgba(141, 126, 227, 0.2);
-    transition: 0.5s;
-}
-.card > img{
-    width: 20px;
-    padding-bottom: 35%;
-}
-.plan-type{
+.option p{
     font-size: 13px;
-    margin-bottom: 5%;
 }
-.plan-bill{
-    font-size: 10px;
+.plans {
+  display: flex;
+  flex-direction: row;
+  padding-top: 3%;
 }
-.select-plan{
-position: absolute;
-padding-top: 5%;
-right: 0%;
-transform: translateX(-20%);
+.card {
+  border: 1px solid #483eff;
+  padding: 18px 28px 16px 10px;
+  margin-right: 5%;
+  width: 110px;
+  border-radius: 10px;
+  color: #151169;
+  cursor: pointer;
+  transition: 0.7s;
+}
+.card:hover {
+  background-color: rgba(141, 126, 227, 0.2);
+  transition: ease-in 0.5s;
+}
+.card > img {
+  width: 20px;
+  padding-bottom: 35%;
+}
+.plan-type {
+  font-size: 13px;
+  margin-bottom: 5%;
+}
+.plan-bill {
+  font-size: 10px;
+}
+.select-plan {
+  position: absolute;
+  padding-top: 5%;
+  right: 0%;
+  transform: translateX(-20%);
+  /* border: 1px solid red; */
+}
+#back{
+    background-color: #4d4d4d;
+    margin-right: 50%;
 }
 /* Toggle switch */
 .switch {
@@ -143,7 +156,7 @@ transform: translateX(-20%);
   display: inline-block;
   width: 70px;
   height: 34px;
-  scale: 0.55;
+  scale: 0.5;
 }
 
 .switch input {
