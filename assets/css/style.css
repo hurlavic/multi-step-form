@@ -107,14 +107,18 @@ button {
     padding-top: 3%;
 }
 .card{
-    border: 1px solid #18163f;
+    border: 1px solid #483eff;
     padding: 18px 28px 16px 10px;
     margin-right: 5%;
     width: 110px;
     border-radius: 10px;
     color: #151169;
     cursor: pointer;
-    /* height: 110px; */
+    transition: 0.7s;
+}
+.card:hover{
+    background-color: rgba(141, 126, 227, 0.2);
+    transition: 0.5s;
 }
 .card > img{
     width: 20px;
