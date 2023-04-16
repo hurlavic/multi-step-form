@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:'Times New Roman', Times, serif
+  font-family: "Times New Roman", Times, serif;
 }
 body {
   display: flex;
@@ -14,7 +14,7 @@ body {
 }
 section {
   background-color: white;
-  padding: 0.5% 7% 0.5% 0.5%;
+  padding: 0.5% 4% 0.5% 0.5%;
   width: 800px;
   flex-direction: row;
   display: flex;
@@ -41,9 +41,9 @@ span {
   width: 130px;
   color: white;
 }
-.tab-text > p{
-    font-size: 8px;
-    color: rgb(218, 217, 215);
+.tab-text > p {
+  font-size: 8px;
+  color: rgb(218, 217, 215);
 }
 .tabs {
   display: flex;
@@ -53,11 +53,8 @@ span {
 form {
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
-  
 }
 .display-info {
-  /* align-self: center; */
   padding-top: 5%;
 }
 input {
@@ -67,10 +64,13 @@ input {
   border-radius: 10px;
   border: 1px solid black;
 }
-label{
-    padding-top: 4%;
-    padding-bottom: 1.2%;
-    font-size: 13px;
+input[type="text"] {
+  font-size: 15px;
+}
+.label {
+  padding-top: 4%;
+  padding-bottom: 1.2%;
+  font-size: 13px;
 }
 button {
   width: 100px;
@@ -78,16 +78,73 @@ button {
 .header > p {
   font-size: smaller;
   margin-bottom: 5%;
+  color: rgb(126, 126, 126);
 }
-button{
-    background-color: #18163f;
-    border: 1px solid rgb(69, 69, 101);
-    color: white;
-    padding: 2% 3%;
-    width: 80px;
-    border-radius: 8px;
-    font-size: 12px;
+button {
+  background-color: #18163f;
+  border: 1px solid rgb(69, 69, 101);
+  color: white;
+  padding: 2% 3%;
+  width: 80px;
+  border-radius: 8px;
+  font-size: 12px;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-top: 20%;
+}
+/* Toggle switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 70px;
+    height: 34px;
+    scale: 0.55;
+    
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
     cursor: pointer;
-    align-self: flex-end;
-    margin-top: 20%;
-}
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 18px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 6px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 26px;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(28px);
+    -ms-transform: translateX(28px);
+    transform: translateX(32px);
+  }
+  
