@@ -151,65 +151,77 @@
             Step</button>
         </div>
       </div>
-      <!-- Summary of order -->
-      <div class="md:absolute md:right-20 mt-10" style="visibility: visible;" id="adds-on">
+      <!-- Summary of order-monthly -->
+      <div class="md:absolute md:right-20 mt-10" style="visibility: hidden;" id="summary-monthly">
         <div class="header">
           <h2 class="text-xl font-semibold">Finishing up</h2>
           <p>Double-check everything looks OK before confirming.</p>
         </div>
-
-        <div class="select-options flex flex-col items-center rounded px-4 py-2 mb-2 bg-indigo-400/10 divide-solid">
-          <div class="flex flex-row">
-            <div class="mr-20">
+        <div class="select-options w-full rounded px-4 py-2 mb-2 bg-indigo-400/10">
+          <div class="flex flex-row justify-between">
+            <div>
               <h4>Arcade (Monthly)</h4>
               <a href="#" class="text-xs text-gray-500 underline cursor-pointer">Change</a>
             </div>
-            <p id="price" class="ml-20 text-sm">£9/mo</p>
+            <p id="price" class="text-sm">£9/mo</p>
           </div>
-          <div class="flex">
-            <div class="mr-20">
-              <h4>Arcade (Monthly)</h4>
-              <a href="#" class="text-xs text-gray-500 underline cursor-pointer">Change</a>
-            </div>
-            <p id="price" class="ml-20 text-sm">£9/mo</p>
+          <hr>
+          <div class="flex flex-row justify-between">
+            <h4 class="text-sm text-gray-400">Online service</h4>
+            <p id="price" class="text-xs">+£1/mo</p>
+          </div>
+          <div class="flex flex-row justify-between">
+            <h4 class="text-sm text-gray-400">Larger storage</h4>
+            <p id="price" class="text-xs">+£2/mo</p>
           </div>
         </div>
-
-        <!-- <div
-          class="select-options flex flex-row items-center border border-sky-500 rounded px-4 py-2 mb-2 cursor-pointer hover:bg-indigo-400/10">
-          <input type="checkbox" class="w-3 mr-5" />
-          <div class="mr-12">
-            <h4>Larger storage</h4>
-            <p class="text-xs text-gray-500">Extra 1TB of cloud save</p>
-          </div>
-          <p id="price" class="ml-16 flex text-sm text-end">+£2/mo</p>
+        <div class="flex flex-row justify-between mb-28">
+          <h4 class="text-sm text-gray-400 pl-4">Total (per month)</h4>
+          <p id="price" class="text-xs pr-4 font-bold">£12/mo</p>
         </div>
-        <div
-          class="select-options flex flex-row items-center border border-sky-500 rounded px-4 py-2 mb-14 cursor-pointer hover:bg-indigo-400/10">
-          <input type="checkbox" class="w-3 mr-5" />
-          <div class="mr-12">
-            <h4>Customizable profile</h4>
-            <p class="text-xs text-gray-500">Custom theme on your profile</p>
-          </div>
-          <p id="price" class="ml-9 text-sm">+£2/mo</p>
-        </div> -->
         <div>
           <button type="submit" id="back" class="absolute left-0 rounded bg-gray-400 text-sm font-medium py-1.5">Go
             Back</button>
-          <button type="submit" id="next" class="absolute right-0 rounded bg-blue-900 text-white text-sm py-1.5">Next
-            Step</button>
+          <button type="submit" id="next"
+            class="absolute right-0 rounded bg-blue-900 text-white text-sm py-1.5">Confirm</button>
+        </div>
+      </div>
+      <!-- Summary of order-yearly -->
+      <div class="md:absolute md:right-20 mt-10" style="visibility: visible;" id="summary-yearly">
+        <div class="header">
+          <h2 class="text-xl font-semibold">Finishing up</h2>
+          <p>Double-check everything looks OK before confirming.</p>
+        </div>
+        <div class="select-options w-full rounded px-4 py-2 mb-2 bg-indigo-400/10">
+          <div class="flex flex-row justify-between">
+            <div>
+              <h4>Arcade (Yearly)</h4>
+              <a href="#" class="text-xs text-gray-500 underline cursor-pointer">Change</a>
+            </div>
+            <p id="price" class="text-sm">£90/yr</p>
+          </div>
+          <hr>
+          <div class="flex flex-row justify-between">
+            <h4 class="text-sm text-gray-400">Online service</h4>
+            <p id="price" class="text-xs">+£10/yr</p>
+          </div>
+          <div class="flex flex-row justify-between">
+            <h4 class="text-sm text-gray-400">Larger storage</h4>
+            <p id="price" class="text-xs">+£20/yr</p>
+          </div>
+        </div>
+        <div class="flex flex-row justify-between mb-28">
+          <h4 class="text-sm text-gray-400 pl-4">Total (per month)</h4>
+          <p id="price" class="text-xs pr-4 font-bold">£120/yr</p>
+        </div>
+        <div>
+          <button type="submit" id="back" class="absolute left-0 rounded bg-gray-400 text-sm font-medium py-1.5">Go
+            Back</button>
+          <button type="submit" id="next"
+            class="absolute right-0 rounded bg-blue-900 text-white text-sm py-1.5">Confirm</button>
         </div>
       </div>
     </section>
-
-
-
-
-    <!-- Step 3 end -->
-
-    <!-- Step 4 start -->
-
-
 
     <!-- Dynamically add subscription and add-on selections here -->
 
