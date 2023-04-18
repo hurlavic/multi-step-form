@@ -82,32 +82,8 @@ button {
   margin-bottom: 5%;
   color: rgb(126, 126, 126);
 }
-button {
-  background-color: #18163f;
-  border: 1px solid rgb(69, 69, 101);
-  color: white;
-  padding: 2% 0;
-  width: 80px;
-  border-radius: 8px;
-  font-size: 12px;
-  cursor: pointer;
-  align-self: flex-end;
-  margin-top: 20%;
-}
 
 /* Select plan */
-.option {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-top: 8%;
-  background-color: rgba(171, 157, 248, 0.2);
-  padding: 1% 3%;
-}
-.option p {
-  font-size: 13px;
-}
 .plans {
   display: flex;
   flex-direction: row;
@@ -126,10 +102,6 @@ button {
 .card:hover {
   background-color: rgba(141, 126, 227, 0.2);
   transition: ease-in 0.5s;
-}
-.card > img {
-  width: 20px;
-  padding-bottom: 35%;
 }
 .plan-type {
   font-size: 13px;

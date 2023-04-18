@@ -56,7 +56,7 @@
         </div>
       </div>
       <!-- Personal Info -->
-      <div class="display-info" style="visibility: hidden;">
+      <div  class="md:absolute md:right-20 mt-10" style="visibility: hidden;">
         <div class="header">
           <h2>Personal info</h2>
           <p>Please provide your name, email address, and phone number</p>
@@ -72,30 +72,30 @@
         </form>
       </div>
       <!-- Select Plan -->
-      <div class="select-plan md:absolute md:right-20 mt-10" style="visibility: visible;" id="pages">
+      <div class="md:absolute md:right-20 mt-10" style="visibility: visible;" id="pages">
         <div class="header">
           <h2 class="text-xl font-semibold">Select your plan</h2>
           <p>You have the option of monthly or yearly billing</p>
         </div>
         <div class="plans">
           <div id="arcade" class="card">
-            <img src="/assets/images/icon-arcade.svg" alt="icon">
+            <img src="/assets/images/icon-arcade.svg" alt="icon" class="w-5 pb-6">
             <h4 class="plan-type">Arcade</h4>
-            <p class="plan-bill">£9/mo</p>
+            <p class="text-xs">£9/mo</p>
           </div>
           <div id="advanced" class="card">
-            <img src="/assets/images/icon-advanced.svg" alt="icon">
+            <img src="/assets/images/icon-advanced.svg" alt="icon" class="w-5 pb-6">
             <h4 class="plan-type">Advanced</h4>
-            <p class="plan-bill">£12/mo</p>
+            <p class="text-xs">£12/mo</p>
           </div>
           <div id="pro" class="card">
-            <img src="/assets/images/icon-pro.svg" alt="icon">
+            <img src="/assets/images/icon-pro.svg" alt="icon" class="w-5 pb-6">
             <h4 class="plan-type">Pro</h4>
-            <p class="plan-bill">£15/mo</p>
+            <p class="text-xs">£15/mo</p>
           </div>
         </div>
-        <div class="option">
-          <p>Monthly</p>
+        <div class="flex flex-row place-content-center items-center bg-gray-200 mt-7">
+          <p class="text-sm">Monthly</p>
           <label class="switch">
             <input type="checkbox" id="mySwitch">
             <span class="slider"></span>
@@ -103,9 +103,9 @@
           <p>Yearly</p>
         </div>
         <div class="mt-14">
-          <button type="submit" id="back" class="absolute left-0 bg-gray-400 text-sm font-medium py-1.5">Go
+          <button type="submit" id="back" class="absolute left-0 bg-gray-400 text-sm rounded font-medium py-1.5">Go
             Back</button>
-          <button type="submit" id="next" class="absolute right-0 bg-blue-900 text-white text-sm py-1.5">Next
+          <button type="submit" id="next" class="absolute right-0 bg-blue-900 text-white rounded text-sm py-1.5">Next
             Step</button>
         </div>
       </div>
@@ -143,9 +143,9 @@
           <p id="price" class="ml-9 text-sm">+£2/mo</p>
         </div>
         <div>
-          <button type="submit" id="back" class="absolute left-0 bg-gray-400 text-sm font-medium py-1.5">Go
+          <button type="submit" id="back" class="absolute left-0 rounded bg-gray-400 text-sm font-medium py-1.5">Go
             Back</button>
-          <button type="submit" id="next" class="absolute right-0 bg-blue-900 text-white text-sm py-1.5">Next
+          <button type="submit" id="next" class="absolute right-0 rounded bg-blue-900 text-white text-sm py-1.5">Next
             Step</button>
         </div>
       </div>
