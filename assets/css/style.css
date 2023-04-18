@@ -33,9 +33,6 @@ section {
 }
 span {
   padding: 3% 7.3%;
-  border: 1px solid white;
-  /* border-radius: 100%; */
-  color: white;
 }
 .tab-text {
   padding-left: 8%;
@@ -47,11 +44,7 @@ span {
   font-size: 8px;
   color: rgb(218, 217, 215);
 }
-.tabs {
-  display: flex;
-  flex-direction: row;
-  padding-bottom: 12%;
-}
+
 form {
   display: flex;
   flex-direction: column;
@@ -69,8 +62,11 @@ input {
 input[type="text"] {
   font-size: 15px;
 }
+input::placeholder {
+  font-size: small;
+}
 .label {
-  padding-top: 4%;
+  padding-top: 3.8%;
   padding-bottom: 1.2%;
   font-size: 13px;
 }

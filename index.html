@@ -26,53 +26,54 @@
     <section>
       <!-- Side Bar -->
       <div class="side-bar">
-        <div class="tabs">
-          <span class="rounded-full h-8">1</span>
+        <div class="flex flex-row pb-4">
+          <span class="rounded-full h-8 border border-white text-white">1</span>
           <div class="tab-text">
-            <p>STEP 1</p>
+            <p class="text-gray-500">STEP 1</p>
             <h4>YOUR INFO</h4>
           </div>
         </div>
-        <div class="tabs">
-          <span class="rounded-full h-8">2</span>
+        <div class="flex flex-row pb-4">
+          <span class="rounded-full h-8 border border-white text-white">2</span>
           <div class="tab-text">
-            <p>STEP 2</p>
+            <p class="text-gray-500">STEP 2</p>
             <h4>SELECT PLAN</h4>
           </div>
         </div>
-        <div class="tabs">
-          <span class="rounded-full h-8">3</span>
+        <div class="flex flex-row pb-4">
+          <span class="rounded-full h-8 border border-white text-white">3</span>
           <div class="tab-text">
-            <p>STEP 3</p>
+            <p class="text-gray-500">STEP 3</p>
             <h4>ADD-ONS</h4>
           </div>
         </div>
-        <div class="tabs">
-          <span class="rounded-full h-8">4</span>
+        <div class="flex flex-row pb-4">
+          <span class="rounded-full h-8 border border-white text-white">4</span>
           <div class="tab-text">
-            <p>STEP 4</p>
+            <p class="text-gray-500">STEP 4</p>
             <h4>SUMMARY</h4>
           </div>
         </div>
       </div>
       <!-- Personal Info -->
-      <div  class="md:absolute md:right-20 mt-10" style="visibility: hidden;">
+      <div  class="md:absolute md:right-20 mt-10" style="visibility: visible;">
         <div class="header">
           <h2>Personal info</h2>
           <p>Please provide your name, email address, and phone number</p>
         </div>
         <form action="submit">
           <label for="name" class="label">Name</label>
-          <input type="text" id="name" placeholder=" e.g John Doe">
+          <input type="text" id="name" placeholder=" e.g John Doe" class="rounded p-1">
           <label for="email" class="label">Email Address</label>
-          <input type="text" id="email" placeholder="e.g johndoe@example.com">
+          <input type="text" id="email" placeholder="e.g johndoe@example.com" class="rounded p-1">
           <label for="phoneNos" class="label">Phone Number</label>
-          <input type="text" id="phoneNos" placeholder="e.g +1234567891">
-          <button type="submit">Next Step</button>
+          <input type="text" id="phoneNos" placeholder="e.g +1234567891" class="rounded p-1 mb-20">
+          <button type="submit" id="next" class="absolute right-0 bottom-0 bg-blue-900 text-white rounded text-sm py-1.5">Next
+            Step</button>
         </form>
       </div>
       <!-- Select Plan -->
-      <div class="md:absolute md:right-20 mt-10" style="visibility: visible;" id="pages">
+      <div class="md:absolute md:right-20 mt-10" style="visibility: hidden;" id="pages">
         <div class="header">
           <h2 class="text-xl font-semibold">Select your plan</h2>
           <p>You have the option of monthly or yearly billing</p>
