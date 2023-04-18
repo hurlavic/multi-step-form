@@ -138,12 +138,7 @@ button {
 .plan-bill {
   font-size: 10px;
 }
-#pages {
-  position: absolute;
-  padding-top: 5%;
-  right: 0%;
-  transform: translateX(-20%);
-}
+
 /* Toggle switch */
 .switch {
   position: relative;

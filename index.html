@@ -24,6 +24,7 @@
   <body>
 
     <section>
+      <!-- Side Bar -->
       <div class="side-bar">
         <div class="tabs">
           <span class="rounded-full h-8">1</span>
@@ -54,6 +55,7 @@
           </div>
         </div>
       </div>
+      <!-- Personal Info -->
       <div class="display-info" style="visibility: hidden;">
         <div class="header">
           <h2>Personal info</h2>
@@ -69,9 +71,10 @@
           <button type="submit">Next Step</button>
         </form>
       </div>
-      <div class="select-plan" style="visibility: hidden;" id="pages">
+      <!-- Select Plan -->
+      <div class="select-plan md:absolute md:right-20 mt-10" style="visibility: visible;" id="pages">
         <div class="header">
-          <h2>Select your plan</h2>
+          <h2 class="text-xl font-semibold">Select your plan</h2>
           <p>You have the option of monthly or yearly billing</p>
         </div>
         <div class="plans">
@@ -99,12 +102,15 @@
           </label>
           <p>Yearly</p>
         </div>
-        <div>
-          <button type="submit" id="back">Go Back</button>
-          <button type="submit" id="next">Next Step</button>
+        <div class="mt-14">
+          <button type="submit" id="back" class="absolute left-0 bg-gray-400 text-sm font-medium py-1.5">Go
+            Back</button>
+          <button type="submit" id="next" class="absolute right-0 bg-blue-900 text-white text-sm py-1.5">Next
+            Step</button>
         </div>
       </div>
-      <div class="md:absolute md:right-20 mt-10" style="visibility: visible;" id="adds-on">
+      <!-- Pick adds-on -->
+      <div class="md:absolute md:right-20 mt-10" style="visibility: hidden;" id="adds-on">
         <div class="header">
           <h2 class="text-xl font-semibold">Pick add-ons</h2>
           <p>Add-ons help enhance your gaming experience.</p>
@@ -144,17 +150,7 @@
         </div>
       </div>
     </section>
-    <!-- Sidebar end -->
 
-    <!-- Step 1 start -->
-
-    <!-- Step 1 end -->
-
-    <!-- Step 2 start -->
-
-    <!-- Step 2 end -->
-
-    <!-- Step 3 start -->
 
 
 
