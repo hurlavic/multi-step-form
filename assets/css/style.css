@@ -49,9 +49,6 @@ form {
   display: flex;
   flex-direction: column;
 }
-.display-info {
-  padding-top: 5%;
-}
 input {
   width: 100%;
   padding: 2%;
@@ -61,12 +58,13 @@ input {
 }
 input[type="text"] {
   font-size: 15px;
+  padding-left: 3%;
 }
 input::placeholder {
   font-size: small;
 }
 .label {
-  padding-top: 3.8%;
+  padding-top: 3.4%;
   padding-bottom: 1.2%;
   font-size: 13px;
 }

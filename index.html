@@ -56,10 +56,10 @@
         </div>
       </div>
       <!-- Personal Info -->
-      <div  class="md:absolute md:right-20 mt-10" style="visibility: visible;">
+      <div class="md:absolute md:right-20 mt-10" style="visibility: hidden;">
         <div class="header">
-          <h2>Personal info</h2>
-          <p>Please provide your name, email address, and phone number</p>
+          <h2 class="text-xl font-semibold">Personal info</h2>
+          <p>Please provide your name, email address, and phone number.</p>
         </div>
         <form action="submit">
           <label for="name" class="label">Name</label>
@@ -68,7 +68,8 @@
           <input type="text" id="email" placeholder="e.g johndoe@example.com" class="rounded p-1">
           <label for="phoneNos" class="label">Phone Number</label>
           <input type="text" id="phoneNos" placeholder="e.g +1234567891" class="rounded p-1 mb-20">
-          <button type="submit" id="next" class="absolute right-0 bottom-0 bg-blue-900 text-white rounded text-sm py-1.5">Next
+          <button type="submit" id="next"
+            class="absolute right-0 bottom-0 bg-blue-900 text-white rounded text-sm py-1.5">Next
             Step</button>
         </form>
       </div>
@@ -76,7 +77,7 @@
       <div class="md:absolute md:right-20 mt-10" style="visibility: hidden;" id="pages">
         <div class="header">
           <h2 class="text-xl font-semibold">Select your plan</h2>
-          <p>You have the option of monthly or yearly billing</p>
+          <p>You have the option of monthly or yearly billing.</p>
         </div>
         <div class="plans">
           <div id="arcade" class="card">
@@ -143,6 +144,55 @@
           </div>
           <p id="price" class="ml-9 text-sm">+£2/mo</p>
         </div>
+        <div>
+          <button type="submit" id="back" class="absolute left-0 rounded bg-gray-400 text-sm font-medium py-1.5">Go
+            Back</button>
+          <button type="submit" id="next" class="absolute right-0 rounded bg-blue-900 text-white text-sm py-1.5">Next
+            Step</button>
+        </div>
+      </div>
+      <!-- Summary of order -->
+      <div class="md:absolute md:right-20 mt-10" style="visibility: visible;" id="adds-on">
+        <div class="header">
+          <h2 class="text-xl font-semibold">Finishing up</h2>
+          <p>Double-check everything looks OK before confirming.</p>
+        </div>
+
+        <div class="select-options flex flex-col items-center rounded px-4 py-2 mb-2 bg-indigo-400/10 divide-solid">
+          <div class="flex flex-row">
+            <div class="mr-20">
+              <h4>Arcade (Monthly)</h4>
+              <a href="#" class="text-xs text-gray-500 underline cursor-pointer">Change</a>
+            </div>
+            <p id="price" class="ml-20 text-sm">£9/mo</p>
+          </div>
+          <div class="flex">
+            <div class="mr-20">
+              <h4>Arcade (Monthly)</h4>
+              <a href="#" class="text-xs text-gray-500 underline cursor-pointer">Change</a>
+            </div>
+            <p id="price" class="ml-20 text-sm">£9/mo</p>
+          </div>
+        </div>
+
+        <!-- <div
+          class="select-options flex flex-row items-center border border-sky-500 rounded px-4 py-2 mb-2 cursor-pointer hover:bg-indigo-400/10">
+          <input type="checkbox" class="w-3 mr-5" />
+          <div class="mr-12">
+            <h4>Larger storage</h4>
+            <p class="text-xs text-gray-500">Extra 1TB of cloud save</p>
+          </div>
+          <p id="price" class="ml-16 flex text-sm text-end">+£2/mo</p>
+        </div>
+        <div
+          class="select-options flex flex-row items-center border border-sky-500 rounded px-4 py-2 mb-14 cursor-pointer hover:bg-indigo-400/10">
+          <input type="checkbox" class="w-3 mr-5" />
+          <div class="mr-12">
+            <h4>Customizable profile</h4>
+            <p class="text-xs text-gray-500">Custom theme on your profile</p>
+          </div>
+          <p id="price" class="ml-9 text-sm">+£2/mo</p>
+        </div> -->
         <div>
           <button type="submit" id="back" class="absolute left-0 rounded bg-gray-400 text-sm font-medium py-1.5">Go
             Back</button>
