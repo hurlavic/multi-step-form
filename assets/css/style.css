@@ -32,9 +32,9 @@ section {
   border-radius: 10px;
 }
 span {
-  padding: 3% 7%;
+  padding: 3% 7.3%;
   border: 1px solid white;
-  border-radius: 100%;
+  /* border-radius: 100%; */
   color: white;
 }
 .tab-text {
@@ -104,10 +104,9 @@ button {
   margin-top: 8%;
   background-color: rgba(171, 157, 248, 0.2);
   padding: 1% 3%;
-  
 }
-.option p{
-    font-size: 13px;
+.option p {
+  font-size: 13px;
 }
 .plans {
   display: flex;
@@ -139,18 +138,11 @@ button {
 .plan-bill {
   font-size: 10px;
 }
-.select-plan {
+#pages {
   position: absolute;
   padding-top: 5%;
   right: 0%;
   transform: translateX(-20%);
-  /* border: 1px solid red; */
-}
-#back{
-    background-color: rgba(62, 62, 62, 0.4);
-    margin-right: 50%;
-    color: #18163f;
-    font-weight: 600;
 }
 /* Toggle switch */
 .switch {

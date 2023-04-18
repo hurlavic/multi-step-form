@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/assets/css/style.css">
     <title>Multi-step form</title>
 
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
       .attribution {
         font-size: 11px;
@@ -25,35 +26,35 @@
     <section>
       <div class="side-bar">
         <div class="tabs">
-          <span>1</span>
+          <span class="rounded-full h-8">1</span>
           <div class="tab-text">
             <p>STEP 1</p>
             <h4>YOUR INFO</h4>
           </div>
         </div>
         <div class="tabs">
-          <span>2</span>
+          <span class="rounded-full h-8">2</span>
           <div class="tab-text">
             <p>STEP 2</p>
             <h4>SELECT PLAN</h4>
           </div>
         </div>
         <div class="tabs">
-          <span>3</span>
+          <span class="rounded-full h-8">3</span>
           <div class="tab-text">
             <p>STEP 3</p>
             <h4>ADD-ONS</h4>
           </div>
         </div>
         <div class="tabs">
-          <span>4</span>
+          <span class="rounded-full h-8">4</span>
           <div class="tab-text">
             <p>STEP 4</p>
             <h4>SUMMARY</h4>
           </div>
         </div>
       </div>
-      <div class="display-info" style="display: none;">
+      <div class="display-info" style="visibility: hidden;">
         <div class="header">
           <h2>Personal info</h2>
           <p>Please provide your name, email address, and phone number</p>
@@ -68,7 +69,7 @@
           <button type="submit">Next Step</button>
         </form>
       </div>
-      <div class="select-plan">
+      <div class="select-plan" style="visibility: hidden;" id="pages">
         <div class="header">
           <h2>Select your plan</h2>
           <p>You have the option of monthly or yearly billing</p>
@@ -77,17 +78,17 @@
           <div id="arcade" class="card">
             <img src="/assets/images/icon-arcade.svg" alt="icon">
             <h4 class="plan-type">Arcade</h4>
-            <p class="plan-bill">$9/mo</p>
+            <p class="plan-bill">£9/mo</p>
           </div>
           <div id="advanced" class="card">
             <img src="/assets/images/icon-advanced.svg" alt="icon">
             <h4 class="plan-type">Advanced</h4>
-            <p class="plan-bill">$12/mo</p>
+            <p class="plan-bill">£12/mo</p>
           </div>
           <div id="pro" class="card">
             <img src="/assets/images/icon-pro.svg" alt="icon">
             <h4 class="plan-type">Pro</h4>
-            <p class="plan-bill">$15/mo</p>
+            <p class="plan-bill">£15/mo</p>
           </div>
         </div>
         <div class="option">
@@ -102,6 +103,41 @@
           <button type="submit" id="back">Go Back</button>
           <button type="submit" id="next">Next Step</button>
         </div>
+      </div>
+      <div class="md:absolute md:right-20 mt-10" style="visibility: visible;" id="adds-on">
+        <div class="header">
+          <h2 class="text-xl font-semibold">Pick add-ons</h2>
+          <p>Add-ons help enhance your gaming experience.</p>
+        </div>
+        <div class="select-options flex flex-row justify-between items-center border border-sky-500 rounded px-4 py-2 mb-2">
+          <input type="checkbox" class="w-3 mr-5" />
+          <div class="mr-12">
+            <h4>Online service</h4>
+            <p class="text-xs text-gray-500">Access to multiplayer games</p>
+          </div>
+          <p id="price" class="ml-10">+£1/mo</p>
+        </div>
+        <div class="select-options flex flex-row justify-between items-center border border-sky-500 rounded px-4 py-2 mb-2">
+          <input type="checkbox" class="w-3 mr-5" />
+          <div class="mr-12">
+            <h4>Larger storage</h4>
+            <p class="text-xs text-gray-500">Extra 1TB of cloud save</p>
+          </div>
+          <p id="price" class="ml-10">+£2/mo</p>
+        </div>
+        <div class="select-options flex flex-row justify-between items-center border border-sky-500 rounded px-4 py-2 mb-14">
+          <input type="checkbox" class="w-3 mr-5" />
+          <div class="mr-12">
+            <h4>Customizable profile</h4>
+            <p class="text-xs text-gray-500">Custom theme on your profile</p>
+          </div>
+          <p id="price" class="ml-10">+£2/mo</p>
+        </div>
+        <div>
+          <button type="submit" id="back" class="absolute left-0 bg-gray-400 text-sm font-medium py-1.5">Go Back</button>
+          <button type="submit" id="next" class="absolute right-0 bg-blue-900 text-white text-sm py-1.5">Next Step</button>
+        </div>
+      </div>
     </section>
     <!-- Sidebar end -->
 
