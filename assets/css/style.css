@@ -81,13 +81,12 @@ button {
 .plans {
   display: flex;
   flex-direction: row;
-  padding-top: 3%;
 }
 .card {
   border: 1px solid #483eff;
-  padding: 18px 28px 16px 10px;
-  margin-right: 5%;
-  width: 110px;
+  padding: 18px 20px 16px 10px;
+  margin-right: 3%;
+  width: 130px;
   border-radius: 10px;
   color: #151169;
   cursor: pointer;
