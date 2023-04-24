@@ -26,8 +26,8 @@ section {
 .side-bar {
   background-image: url("/assets/images/bg-sidebar-desktop.svg");
   background-repeat: no-repeat;
-  height: 400px;
   background-size: cover;
+  height: 400px;
   padding: 5% 6%;
   border-radius: 10px;
 }
